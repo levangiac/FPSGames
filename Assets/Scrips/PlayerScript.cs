@@ -55,8 +55,8 @@ public class PlayerScript : MonoBehaviour
             animator.SetBool("Running", false);
             animator.SetBool("Idle", false);
             animator.SetTrigger("Jump");
-            animator.SetBool("AimWalk", false);
-            animator.SetBool("IdleAim", false);
+            animator.SetBool("AnimWalk", false);
+            animator.SetBool("IdleAnim", false);
 
 
 
@@ -73,8 +73,8 @@ public class PlayerScript : MonoBehaviour
             animator.SetBool("Running", false);
             animator.SetBool("Idle", true);
             animator.SetTrigger("Jump");
-            animator.SetBool("AimWalk", false);
-            animator.SetBool("IdleAim", false);
+            animator.SetBool("AnimWalk", false);
+            animator.SetBool("IdleAnim", false);
             currentPlayerSpeed = 0f;
         }
     }
@@ -108,7 +108,7 @@ public class PlayerScript : MonoBehaviour
                 animator.SetBool("Walk", false);
                 animator.SetBool("Running", true);
                 animator.SetBool("Idle", false);
-                animator.SetBool("IdleAim", false);
+                animator.SetBool("IdleAnim", false);
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnCalmVelocity, turnCalmTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
