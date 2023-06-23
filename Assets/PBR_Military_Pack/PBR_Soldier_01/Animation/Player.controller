@@ -22,7 +22,7 @@ AnimatorStateTransition:
   m_ExitTime: 0.9749164
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 3
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
 --- !u!1101 &-8676543404628062102
@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Wallk
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5054605178749926859}
@@ -42,12 +42,12 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.9749164
+  m_TransitionDuration: 0.24999905
+  m_TransitionOffset: 0.083378054
+  m_ExitTime: 0.9749166
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 1
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
 --- !u!1102 &-8397446829319318316
@@ -188,7 +188,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: AnimWallk
+    m_ConditionEvent: AnimWalk
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: IdleAnim
@@ -245,7 +245,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Wallk
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: IdleAnim
@@ -301,7 +301,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IdleAnim
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: Wallk
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2141438548850695385}
@@ -326,7 +326,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Wallk
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5054605178749926859}
@@ -434,7 +434,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: AnimWallk
+    m_ConditionEvent: AnimWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5054605178749926859}
@@ -566,7 +566,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: AnimWallk
+    m_ConditionEvent: AnimWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2141438548850695385}
@@ -641,7 +641,7 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Wallk
+  - m_Name: Walk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -671,7 +671,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: AnimWallk
+  - m_Name: AnimWalk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -683,7 +683,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: FireWallk
+  - m_Name: FireWalk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -962,7 +962,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Wallk
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2113409075356279346}
@@ -1010,7 +1010,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: shootWallk
+  m_Name: shootWalk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1041,7 +1041,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: FireWallk
+    m_ConditionEvent: FireWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5054605178749926859}
@@ -1066,7 +1066,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: AnimWallk
+    m_ConditionEvent: AnimWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8397446829319318316}
@@ -1274,7 +1274,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Wallk
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5054605178749926859}
@@ -1312,7 +1312,7 @@ AnimatorStateTransition:
   m_ExitTime: 0.9749164
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 1
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
 --- !u!1101 &8364745963561207594
@@ -1337,7 +1337,7 @@ AnimatorStateTransition:
   m_ExitTime: 0.9749164
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 1
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
 --- !u!1101 &8661299622130982579
@@ -1349,7 +1349,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: FireWallk
+    m_ConditionEvent: FireWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2976867482946194652}

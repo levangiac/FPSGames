@@ -26,6 +26,11 @@ public class PlayerScript : MonoBehaviour
     float turnCalmVelocity;
     float turnCalmSurfaceDistance;
     public LayerMask surfaceMask;
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+
+    }
     void Update()
     {
         onSurface = Physics.CheckSphere(surfaceCheck.position, surfaceDistance, surfaceMask);
@@ -95,7 +100,7 @@ public class PlayerScript : MonoBehaviour
     }
     void Sprint()
     {
-        if ((Input.GetButtonDown("Sprint") && Input.GetKey(KeyCode.W)) && onSurface || onSurface && Input.GetKey(KeyCode.UpArrow))
+        if ((Input.GetButton("Sprint") && Input.GetKey(KeyCode.W)) && onSurface || onSurface && Input.GetKey(KeyCode.UpArrow))
         {
 
             float horizontal_axis = Input.GetAxisRaw("Horizontal");
